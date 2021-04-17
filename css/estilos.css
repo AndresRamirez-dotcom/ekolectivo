@@ -1,0 +1,182 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  * {
+    margin:0;
+    padding:0;
+  }
+
+body{
+    /*background-color: #f4f9f9;*/
+    background-color: rgba(230, 225, 242, 0.59);
+}
+
+.contenedor {
+    width: 85%;
+    height: 100vh;
+    max-width: 100%;
+    margin:  10px auto;
+}
+
+@media (max-width: 768px){
+    body{
+        width: 100%;
+    }
+}
+
+h1, p {
+    color: #6e6d7a;
+    font-family: 'Arimo', sans-serif;
+}
+.logo {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+}
+nav {
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+    
+}
+
+.links {
+    border-radius: 30px;
+    box-shadow: #111;
+}
+@media (max-width: 768px){
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+}
+nav ul {
+    list-style: none;
+    
+}
+
+.link{
+    background-color: rgba(230, 225, 242, 0.59);
+    
+}
+
+@media (max-width: 768px){
+    .link{
+        background-color: rgba(230, 225, 242, 0.99);
+    }
+}
+.clearfix{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px){
+    .clearfix{
+        flex-direction: column;
+    }
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 8px 8px;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: #6e6d7a;
+    
+}
+
+nav ul ul {
+    position: absolute;
+    top:100%;
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+@media (max-width: 768px){
+    nav ul li > ul{ 
+        width: 100%;
+        top: 0;
+
+    }
+
+    nav ul li > ul a{ 
+        width: 100%;
+        height: 70px;
+    }
+}
+nav ul li:hover{
+    /*background-color: rgba(0,184,228, .7);*/
+    background-color: rgba(230, 225, 242, 0.59);
+    color: #fff;
+}
+@media (max-width: 768px){
+    nav ul li:hover{
+        /*background-color: rgba(0,184,228, .7);*/
+        background-color: rgba(230, 225, 242, 0.99);
+        color: #fff;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+.contenido {
+    margin-top: 150px;
+}
+
+.contenido {
+    position: relative;
+    height: 450px;
+}
+.capacitacion{
+    position: absolute;
+    height: 450px; 
+}
+ .comunidad, .asesoria, .politicadetransparencia,
+.usb, .universidadsantiagodecali, .universidadcatolica{
+    position: absolute;
+    height: 450px;
+    display: none;
+    animation: myMove 2s linear 0s 1 reverse;
+}
+
+@keyframes myMove {
+    0% { left: 0px; }
+    100% { left: 200px; }
+}
+
+footer{
+    text-align: center;
+}
+.cambio{
+    display: block;
+}
+
+.cambio1{
+    display: none;
+}
+
+.glider{
+    width: 100%;
+    height: 90vh;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.glider div {
+    color: blueviolet;
+    height: 90vh;
+}
+
+.glider div  image{
+    width: 300px;
+    height: 300px;
+}
